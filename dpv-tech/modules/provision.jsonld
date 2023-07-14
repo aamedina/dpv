@@ -1,56 +1,5 @@
 [
   {
-    "@id": "https://w3id.org/dpv/dpv-tech#System",
-    "@type": [
-      "https://w3id.org/dpv#Concept",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/created": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-06-15"
-      }
-    ],
-    "http://purl.org/dc/terms/creator": [
-      {
-        "@value": "Harshvardhan J. Pandit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@language": "en",
-        "@value": "accepted"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Technology provided as a system"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "System"
-      }
-    ],
-    "https://w3id.org/dpv#isInstanceOf": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
-      }
-    ]
-  },
-  {
     "@id": "https://w3id.org/dpv/dpv-tech#Goods",
     "@type": [
       "https://w3id.org/dpv#Concept",
@@ -102,7 +51,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-tech#FixedUse",
+    "@id": "https://w3id.org/dpv/dpv-tech#Product",
     "@type": [
       "https://w3id.org/dpv#Concept",
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -137,13 +86,13 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Technology that can be used a fixed numner of times"
+        "@value": "Technology that is provided as a product"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Fixed Use"
+        "@value": "Product"
       }
     ],
     "https://w3id.org/dpv#isInstanceOf": [
@@ -153,7 +102,47 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-tech#Algorithmic",
+    "@id": "https://w3id.org/dpv/dpv-tech#ProvisionConcepts",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Collection"
+    ],
+    "http://www.w3.org/2004/02/skos/core#member": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#FixedUse"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#Subscription"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#Product"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#Goods"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#Service"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#Algorithmic"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#System"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#Component"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#hasProvisionMethod"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Provision Concepts"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/dpv/dpv-tech#System",
     "@type": [
       "https://w3id.org/dpv#Concept",
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -188,13 +177,64 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Technology provided as an algorithm or method"
+        "@value": "Technology provided as a system"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Algorithmic"
+        "@value": "System"
+      }
+    ],
+    "https://w3id.org/dpv#isInstanceOf": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/dpv/dpv-tech#Subscription",
+    "@type": [
+      "https://w3id.org/dpv#Concept",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-06-15"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Harshvardhan J. Pandit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "accepted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Technology that is provided or used as a periodic subscription"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Subscription"
       }
     ],
     "https://w3id.org/dpv#isInstanceOf": [
@@ -255,47 +295,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-tech#ProvisionConcepts",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Collection"
-    ],
-    "http://www.w3.org/2004/02/skos/core#member": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#FixedUse"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#Subscription"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#Product"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#Goods"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#Service"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#Algorithmic"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#System"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#Component"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#hasProvisionMethod"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Provision Concepts"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/dpv/dpv-tech#Product",
+    "@id": "https://w3id.org/dpv/dpv-tech#Algorithmic",
     "@type": [
       "https://w3id.org/dpv#Concept",
       "http://www.w3.org/2004/02/skos/core#Concept"
@@ -330,13 +330,13 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Technology that is provided as a product"
+        "@value": "Technology provided as an algorithm or method"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Product"
+        "@value": "Algorithmic"
       }
     ],
     "https://w3id.org/dpv#isInstanceOf": [
@@ -346,15 +346,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-tech#hasProvisionMethod",
+    "@id": "https://w3id.org/dpv/dpv-tech#FixedUse",
     "@type": [
-      "https://w3id.org/dpv#Relation",
+      "https://w3id.org/dpv#Concept",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/created": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-07-02"
+        "@value": "2022-06-15"
       }
     ],
     "http://purl.org/dc/terms/creator": [
@@ -370,27 +370,27 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@language": "en",
-        "@value": "changed"
+        "@value": "accepted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Specifies the provision or usage method of technology"
+        "@value": "Technology that can be used a fixed numner of times"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "has provision method"
+        "@value": "Fixed Use"
       }
     ],
-    "https://w3id.org/dpv#hasDomain": [
-      {
-        "@id": "https://w3id.org/dpv#Technology"
-      }
-    ],
-    "https://w3id.org/dpv#hasRange": [
+    "https://w3id.org/dpv#isInstanceOf": [
       {
         "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
       }
@@ -454,15 +454,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-tech#Subscription",
+    "@id": "https://w3id.org/dpv/dpv-tech#hasProvisionMethod",
     "@type": [
-      "https://w3id.org/dpv#Concept",
+      "https://w3id.org/dpv#Relation",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/created": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-06-15"
+        "@value": "2022-07-02"
       }
     ],
     "http://purl.org/dc/terms/creator": [
@@ -478,27 +478,27 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@language": "en",
-        "@value": "accepted"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
+        "@value": "changed"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Technology that is provided or used as a periodic subscription"
+        "@value": "Specifies the provision or usage method of technology"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Subscription"
+        "@value": "has provision method"
       }
     ],
-    "https://w3id.org/dpv#isInstanceOf": [
+    "https://w3id.org/dpv#hasDomain": [
+      {
+        "@id": "https://w3id.org/dpv#Technology"
+      }
+    ],
+    "https://w3id.org/dpv#hasRange": [
       {
         "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
       }

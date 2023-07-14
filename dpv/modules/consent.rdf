@@ -7,6 +7,11 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
    xmlns:sw="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:about="https://w3id.org/dpv#isInstanceOf">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+    <skos:prefLabel xml:lang="en">isInstanceOf</skos:prefLabel>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/dpv#isIndicatedAtTime">
     <rdf:type rdf:resource="https://w3id.org/dpv#Relation"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -20,6 +25,14 @@
     <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Ryan</dct:creator>
     <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Julian Flake</dct:creator>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/dpv#ConsentConcepts">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consent Concepts</skos:prefLabel>
+    <skos:member rdf:resource="https://w3id.org/dpv#isIndicatedBy"/>
+    <skos:member rdf:resource="https://w3id.org/dpv#hasIndicationMethod"/>
+    <skos:member rdf:resource="https://w3id.org/dpv#isIndicatedAtTime"/>
+    <skos:member rdf:resource="https://w3id.org/dpv#hasConsentStatus"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/dpv#hasIndicationMethod">
     <rdf:type rdf:resource="https://w3id.org/dpv#Relation"/>
@@ -35,14 +48,9 @@
     <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Julian Flake</dct:creator>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/dpv#hasDomain">
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
-    <skos:prefLabel xml:lang="en">has domain</skos:prefLabel>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/dpv#isInstanceOf">
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
-    <skos:prefLabel xml:lang="en">isInstanceOf</skos:prefLabel>
+  <rdf:Description rdf:about="https://w3id.org/dpv#isSubTypeOf">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+    <skos:prefLabel xml:lang="en">isSubTypeOf</skos:prefLabel>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/dpv#isIndicatedBy">
@@ -60,18 +68,10 @@
     <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Julian Flake</dct:creator>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/dpv#hasRange">
+  <rdf:Description rdf:about="https://w3id.org/dpv#hasDomain">
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
-    <skos:prefLabel xml:lang="en">has range</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">has domain</skos:prefLabel>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/dpv#ConsentConcepts">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consent Concepts</skos:prefLabel>
-    <skos:member rdf:resource="https://w3id.org/dpv#isIndicatedBy"/>
-    <skos:member rdf:resource="https://w3id.org/dpv#hasIndicationMethod"/>
-    <skos:member rdf:resource="https://w3id.org/dpv#isIndicatedAtTime"/>
-    <skos:member rdf:resource="https://w3id.org/dpv#hasConsentStatus"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/dpv#hasConsentStatus">
     <rdf:type rdf:resource="https://w3id.org/dpv#Relation"/>
@@ -98,9 +98,9 @@
     <skos:prefLabel xml:lang="en">Concept</skos:prefLabel>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/dpv#isSubTypeOf">
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-    <skos:prefLabel xml:lang="en">isSubTypeOf</skos:prefLabel>
+  <rdf:Description rdf:about="https://w3id.org/dpv#hasRange">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#semanticRelation"/>
+    <skos:prefLabel xml:lang="en">has range</skos:prefLabel>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv#"/>
   </rdf:Description>
 </rdf:RDF>

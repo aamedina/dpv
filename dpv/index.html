@@ -29076,14 +29076,43 @@
   <p>The following terms have been proposed for inclusion, and are under discussion. They are provided here for illustrative purposes and should not be considered as part of DPV.</p>
     <strong>personal_data</strong>
     <ul>      <li>ContextuallyAnonymisedData</li>
+      <li>CommerciallyConfidentialData</li>
+      <li>ConfidentialData</li>
+      <li>IntellectualProperty</li>
+      <li>SensitiveData</li>
+      <li>SensitiveNonPersonalData</li>
+      <li>StatisticallyConfidentialData</li>
 </ul>
     <strong>purposes</strong>
     <ul>      <li>IdentityAuthentication</li>
+      <li>DataAltruism</li>
+      <li>CombatClimateChange</li>
+      <li>ImproveHealthcare</li>
+      <li>ImprovePublicServices</li>
+      <li>ImproveTransportMobility</li>
+      <li>ProvideOfficialStatistics</li>
+      <li>PublicPolicyMaking</li>
+      <li>ScientificResearch</li>
+      <li>ProtectionOfIPR</li>
+      <li>ProtectionOfNationalSecurity</li>
+      <li>ProtectionOfPublicSecurity</li>
+      <li>CommercialPurpose</li>
+      <li>NonCommercialPurpose</li>
+      <li>EnhanceDataInteroperability</li>
+      <li>EnsureDataHarmonisationWithStandards</li>
+      <li>ExchangeViewsOnDataProcessing</li>
+      <li>FacilitateDataExchange</li>
+      <li>MisusePreventionAndDetection</li>
+      <li>NegotiateContractualAgreements</li>
+      <li>SupportInformedConsentChoices</li>
 </ul>
     <strong>context</strong>
     <ul>      <li>PurposeDuration</li>
       <li>ConsentDuration</li>
       <li>ContractDuration</li>
+      <li>Occurenace</li>
+      <li>InitialOccurence</li>
+      <li>SubsequentOccurence</li>
       <li>isApplicableFor</li>
       <li>isNotApplicableFor</li>
       <li>hasImportance</li>
@@ -29100,6 +29129,13 @@
       <li>hasRiskSource</li>
       <li>isRiskSourceFor</li>
 </ul>
+    <strong>processing</strong>
+    <ul>      <li>Aggregate</li>
+      <li>Download</li>
+      <li>Export</li>
+      <li>Display</li>
+      <li>Reformat</li>
+</ul>
     <strong>technical_organisational_measures</strong>
     <ul>      <li>isRequiredFor</li>
 </ul>
@@ -29109,6 +29145,27 @@
       <li>DataStoragePolicy</li>
       <li>DataLocationPolicy</li>
       <li>DataRestorationPolicy</li>
+      <li>CommercialConfidentialityAgreement</li>
+      <li>ConsentManagement</li>
+      <li>dpv:DataSubjectRightsManagement</li>
+      <li>PermissionManagement</li>
+      <li>IntellectualPropertyRightsManagement</li>
+      <li>DataAssetList</li>
+      <li>DataBreachNotification</li>
+      <li>DataExchangeMethod</li>
+      <li>DataReusePolicy</li>
+      <li>DataTransferNotice</li>
+      <li>EnforceTransferControl</li>
+      <li>LegalMeasure</li>
+      <li>Licence</li>
+      <li>StatisticalConfidentialityAgreement</li>
+</ul>
+    <strong>entities_organisation</strong>
+    <ul>      <li>CharityOrganisation</li>
+      <li>PrivateSectorBody</li>
+      <li>PublicSectorBody</li>
+      <li>SMEOrganisation</li>
+      <li>StartupOrganisation</li>
 </ul>
     <strong>entities_datasubject</strong>
     <ul>      <li>hasAgeOfMaturity</li>
@@ -29174,7 +29231,7 @@
 
 <section class="appendix" id="appendix-deprecated">
   <h2>Deprecated Terms</h2>
-  <p>The following is a (non-exhaustive and incomplete) list of terms that have been deprecated. They were present in prior releases and have been taken out. Where possible, a common is provided specifying the reason and alternatives if available.</p>
+  <p>The following is a (non-exhaustive and incomplete) list of terms that have been deprecated. They were present in prior releases and have been taken out. Where possible, a comment is provided specifying the reason and alternatives if available.</p>
   <ul>
       <li id="hasExpiry" data-dfn-for"hasExpiry"><dfn>hasExpiry</dfn>:  use dpv:hasDuration instead</li>
       <li id="hasExpiryTime" data-dfn-for"hasExpiryTime"><dfn>hasExpiryTime</dfn>:  use dpv:hasDuration instead</li>

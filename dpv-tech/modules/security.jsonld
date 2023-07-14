@@ -1,5 +1,65 @@
 [
   {
+    "@id": "https://w3id.org/dpv/dpv-tech#PreventionSecurityTechnology",
+    "@type": [
+      "https://w3id.org/dpv#Concept",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-06-15"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Harshvardhan J. Pandit"
+      },
+      {
+        "@value": "Julian Flake"
+      },
+      {
+        "@value": "Georg P Krog"
+      },
+      {
+        "@value": "Paul Ryan"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "accepted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#SecurityTechnology"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Technology related to prevention of vulnerabilities, threats, exploitations"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Prevention Security Technology"
+      }
+    ],
+    "https://w3id.org/dpv#isSubTypeOf": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#SecurityTechnology"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/dpv/dpv-tech#DetectionSecurityTechnology",
     "@type": [
       "https://w3id.org/dpv#Concept",
@@ -60,8 +120,11 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-tech#SecurityTechnology",
-    "http://www.w3.org/2004/02/skos/core#narrower": [
+    "@id": "https://w3id.org/dpv/dpv-tech#SecurityConcepts",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Collection"
+    ],
+    "http://www.w3.org/2004/02/skos/core#member": [
       {
         "@id": "https://w3id.org/dpv/dpv-tech#PET"
       },
@@ -79,6 +142,11 @@
       },
       {
         "@id": "https://w3id.org/dpv/dpv-tech#SecurityManagementTechnology"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Security Concepts"
       }
     ]
   },
@@ -217,11 +285,8 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-tech#SecurityConcepts",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Collection"
-    ],
-    "http://www.w3.org/2004/02/skos/core#member": [
+    "@id": "https://w3id.org/dpv/dpv-tech#SecurityTechnology",
+    "http://www.w3.org/2004/02/skos/core#narrower": [
       {
         "@id": "https://w3id.org/dpv/dpv-tech#PET"
       },
@@ -239,71 +304,6 @@
       },
       {
         "@id": "https://w3id.org/dpv/dpv-tech#SecurityManagementTechnology"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Security Concepts"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/dpv/dpv-tech#PreventionSecurityTechnology",
-    "@type": [
-      "https://w3id.org/dpv#Concept",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/created": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-06-15"
-      }
-    ],
-    "http://purl.org/dc/terms/creator": [
-      {
-        "@value": "Harshvardhan J. Pandit"
-      },
-      {
-        "@value": "Julian Flake"
-      },
-      {
-        "@value": "Georg P Krog"
-      },
-      {
-        "@value": "Paul Ryan"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@language": "en",
-        "@value": "accepted"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#SecurityTechnology"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Technology related to prevention of vulnerabilities, threats, exploitations"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Prevention Security Technology"
-      }
-    ],
-    "https://w3id.org/dpv#isSubTypeOf": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#SecurityTechnology"
       }
     ]
   },

@@ -1,122 +1,54 @@
 [
   {
-    "@id": "https://w3id.org/dpv#RegionalAuthority",
+    "@id": "https://w3id.org/dpv#Entities_AuthorityConcepts",
     "@type": [
-      "https://w3id.org/dpv#Concept",
-      "http://www.w3.org/2004/02/skos/core#Concept"
+      "http://www.w3.org/2004/02/skos/core#Collection"
     ],
-    "http://purl.org/dc/terms/created": [
+    "http://www.w3.org/2004/02/skos/core#member": [
       {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-02-02"
+        "@id": "https://w3id.org/dpv#Authority"
+      },
+      {
+        "@id": "https://w3id.org/dpv#DataProtectionAuthority"
+      },
+      {
+        "@id": "https://w3id.org/dpv#NationalAuthority"
+      },
+      {
+        "@id": "https://w3id.org/dpv#RegionalAuthority"
+      },
+      {
+        "@id": "https://w3id.org/dpv#SupraNationalAuthority"
+      },
+      {
+        "@id": "https://w3id.org/dpv#hasAuthority"
+      },
+      {
+        "@id": "https://w3id.org/dpv#isAuthorityFor"
       }
     ],
-    "http://purl.org/dc/terms/creator": [
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Harshvardhan J. Pandit"
+        "@value": "Entities_Authority Concepts"
       }
-    ],
-    "http://purl.org/dc/terms/source": [
-      {
-        "@id": "http://purl.org/adms"
-      }
-    ],
+    ]
+  },
+  {
+    "@id": "https://w3id.org/dpv#Relation",
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "https://w3id.org/dpv#"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@language": "en",
-        "@value": "accepted"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/dpv#Authority"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "An authority tasked with overseeing legal compliance for a region"
+        "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Regional Authority"
-      }
-    ],
-    "https://w3id.org/dpv#isSubTypeOf": [
-      {
-        "@id": "https://w3id.org/dpv#Authority"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/dpv#GovernmentalOrganisation",
-    "http://www.w3.org/2004/02/skos/core#narrower": [
-      {
-        "@id": "https://w3id.org/dpv#Authority"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/dpv#DataProtectionAuthority",
-    "@type": [
-      "https://w3id.org/dpv#Concept",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/created": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2020-11-04"
-      }
-    ],
-    "http://purl.org/dc/terms/creator": [
-      {
-        "@value": "Georg Krog"
-      },
-      {
-        "@value": "Paul Ryan"
-      },
-      {
-        "@value": "Harshvardhan Pandit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://w3id.org/dpv#"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@language": "en",
-        "@value": "accepted"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/dpv#Authority"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "An authority tasked with overseeing legal compliance regarding privacy and data protection laws."
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Data Protection Authority"
-      }
-    ],
-    "https://w3id.org/dpv#isSubTypeOf": [
-      {
-        "@id": "https://w3id.org/dpv#Authority"
+        "@value": "Relation"
       }
     ]
   },
@@ -175,63 +107,26 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv#NationalAuthority",
-    "@type": [
-      "https://w3id.org/dpv#Concept",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/created": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-02-02"
-      }
-    ],
-    "http://purl.org/dc/terms/creator": [
-      {
-        "@value": "Harshvardhan J. Pandit"
-      }
-    ],
-    "http://purl.org/dc/terms/source": [
-      {
-        "@id": "http://purl.org/adms"
-      }
-    ],
+    "@id": "https://w3id.org/dpv#isSubTypeOf",
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "https://w3id.org/dpv#"
       }
     ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
       {
-        "@language": "en",
-        "@value": "accepted"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/dpv#Authority"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "An authority tasked with overseeing legal compliance for a nation"
+        "@id": "http://www.w3.org/2004/02/skos/core#broader"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "National Authority"
-      }
-    ],
-    "https://w3id.org/dpv#isSubTypeOf": [
-      {
-        "@id": "https://w3id.org/dpv#Authority"
+        "@value": "isSubTypeOf"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/dpv#LegalEntity",
+    "@id": "https://w3id.org/dpv#GovernmentalOrganisation",
     "http://www.w3.org/2004/02/skos/core#narrower": [
       {
         "@id": "https://w3id.org/dpv#Authority"
@@ -258,76 +153,26 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv#isSubTypeOf",
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://w3id.org/dpv#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.w3.org/2004/02/skos/core#broader"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "isSubTypeOf"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/dpv#Entities_AuthorityConcepts",
+    "@id": "https://w3id.org/dpv#DataProtectionAuthority",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Collection"
-    ],
-    "http://www.w3.org/2004/02/skos/core#member": [
-      {
-        "@id": "https://w3id.org/dpv#Authority"
-      },
-      {
-        "@id": "https://w3id.org/dpv#DataProtectionAuthority"
-      },
-      {
-        "@id": "https://w3id.org/dpv#NationalAuthority"
-      },
-      {
-        "@id": "https://w3id.org/dpv#RegionalAuthority"
-      },
-      {
-        "@id": "https://w3id.org/dpv#SupraNationalAuthority"
-      },
-      {
-        "@id": "https://w3id.org/dpv#hasAuthority"
-      },
-      {
-        "@id": "https://w3id.org/dpv#isAuthorityFor"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@value": "Entities_Authority Concepts"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/dpv#hasAuthority",
-    "@type": [
-      "https://w3id.org/dpv#Relation",
+      "https://w3id.org/dpv#Concept",
       "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/created": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-01-19"
+        "@value": "2020-11-04"
       }
     ],
     "http://purl.org/dc/terms/creator": [
       {
-        "@value": "Harshvardhan J. Pandit"
+        "@value": "Georg Krog"
       },
       {
-        "@value": "Georg P Krog"
+        "@value": "Paul Ryan"
+      },
+      {
+        "@value": "Harshvardhan Pandit"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -341,24 +186,24 @@
         "@value": "accepted"
       }
     ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/dpv#Authority"
+      }
+    ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Indicates applicability of authority for a jurisdiction"
+        "@value": "An authority tasked with overseeing legal compliance regarding privacy and data protection laws."
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "has authority"
+        "@value": "Data Protection Authority"
       }
     ],
-    "https://w3id.org/dpv#hasDomain": [
-      {
-        "@id": "https://w3id.org/dpv#Concept"
-      }
-    ],
-    "https://w3id.org/dpv#hasRange": [
+    "https://w3id.org/dpv#isSubTypeOf": [
       {
         "@id": "https://w3id.org/dpv#Authority"
       }
@@ -442,21 +287,77 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv#Concept",
+    "@id": "https://w3id.org/dpv#NationalAuthority",
+    "@type": [
+      "https://w3id.org/dpv#Concept",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-02-02"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Harshvardhan J. Pandit"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "http://purl.org/adms"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "https://w3id.org/dpv#"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
-        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
+        "@language": "en",
+        "@value": "accepted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/dpv#Authority"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "An authority tasked with overseeing legal compliance for a nation"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Concept"
+        "@value": "National Authority"
+      }
+    ],
+    "https://w3id.org/dpv#isSubTypeOf": [
+      {
+        "@id": "https://w3id.org/dpv#Authority"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/dpv#hasDomain",
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/dpv#"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "has domain"
       }
     ]
   },
@@ -480,21 +381,83 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv#hasDomain",
+    "@id": "https://w3id.org/dpv#LegalEntity",
+    "http://www.w3.org/2004/02/skos/core#narrower": [
+      {
+        "@id": "https://w3id.org/dpv#Authority"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/dpv#Concept",
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "https://w3id.org/dpv#"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation"
+        "@id": "http://www.w3.org/2004/02/skos/core#Concept"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "has domain"
+        "@value": "Concept"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/dpv#hasAuthority",
+    "@type": [
+      "https://w3id.org/dpv#Relation",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-01-19"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Harshvardhan J. Pandit"
+      },
+      {
+        "@value": "Georg P Krog"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/dpv#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "accepted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Indicates applicability of authority for a jurisdiction"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "has authority"
+      }
+    ],
+    "https://w3id.org/dpv#hasDomain": [
+      {
+        "@id": "https://w3id.org/dpv#Concept"
+      }
+    ],
+    "https://w3id.org/dpv#hasRange": [
+      {
+        "@id": "https://w3id.org/dpv#Authority"
       }
     ]
   },
@@ -555,21 +518,58 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv#Relation",
+    "@id": "https://w3id.org/dpv#RegionalAuthority",
+    "@type": [
+      "https://w3id.org/dpv#Concept",
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-02-02"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Harshvardhan J. Pandit"
+      }
+    ],
+    "http://purl.org/dc/terms/source": [
+      {
+        "@id": "http://purl.org/adms"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "https://w3id.org/dpv#"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
-        "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation"
+        "@language": "en",
+        "@value": "accepted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/dpv#Authority"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "An authority tasked with overseeing legal compliance for a region"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Relation"
+        "@value": "Regional Authority"
+      }
+    ],
+    "https://w3id.org/dpv#isSubTypeOf": [
+      {
+        "@id": "https://w3id.org/dpv#Authority"
       }
     ]
   }

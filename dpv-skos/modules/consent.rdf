@@ -20,6 +20,14 @@
     <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Julian Flake</dct:creator>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv/dpv-skos#"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/dpv/dpv-skos#ConsentConcepts">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consent Concepts</skos:prefLabel>
+    <skos:member rdf:resource="https://w3id.org/dpv/dpv-skos#isIndicatedBy"/>
+    <skos:member rdf:resource="https://w3id.org/dpv/dpv-skos#hasIndicationMethod"/>
+    <skos:member rdf:resource="https://w3id.org/dpv/dpv-skos#isIndicatedAtTime"/>
+    <skos:member rdf:resource="https://w3id.org/dpv/dpv-skos#hasConsentStatus"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/dpv/dpv-skos#hasIndicationMethod">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -45,14 +53,6 @@
     <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Ryan</dct:creator>
     <dct:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Julian Flake</dct:creator>
     <rdfs:isDefinedBy rdf:resource="https://w3id.org/dpv/dpv-skos#"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/dpv/dpv-skos#ConsentConcepts">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consent Concepts</skos:prefLabel>
-    <skos:member rdf:resource="https://w3id.org/dpv/dpv-skos#isIndicatedBy"/>
-    <skos:member rdf:resource="https://w3id.org/dpv/dpv-skos#hasIndicationMethod"/>
-    <skos:member rdf:resource="https://w3id.org/dpv/dpv-skos#isIndicatedAtTime"/>
-    <skos:member rdf:resource="https://w3id.org/dpv/dpv-skos#hasConsentStatus"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/dpv/dpv-skos#hasConsentStatus">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>

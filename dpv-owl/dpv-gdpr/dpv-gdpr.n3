@@ -937,7 +937,7 @@ dpvo-gdpr:DirectDataCollectionNotice a owl:Class ;
     sw:term_status "accepted"@en .
 
 dpvo-gdpr:GDPRComplianceUnknown a owl:NamedIndividual,
-        dpvo-gdpr:GDPRLawulness ;
+        dpvo-gdpr:GDPRLawfulness ;
     rdfs:label "GDPR Compliance Unknown"@en ;
     dct:created "2022-10-22"^^xsd:date ;
     dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
@@ -946,7 +946,7 @@ dpvo-gdpr:GDPRComplianceUnknown a owl:NamedIndividual,
     sw:term_status "accepted"@en .
 
 dpvo-gdpr:GDPRCompliant a owl:NamedIndividual,
-        dpvo-gdpr:GDPRLawulness ;
+        dpvo-gdpr:GDPRLawfulness ;
     rdfs:label "GDPR Compliant"@en ;
     dct:created "2022-10-22"^^xsd:date ;
     dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
@@ -954,17 +954,8 @@ dpvo-gdpr:GDPRCompliant a owl:NamedIndividual,
     rdfs:isDefinedBy dpvo-gdpr: ;
     sw:term_status "accepted"@en .
 
-dpvo-gdpr:GDPRLawfulness a owl:Class ;
-    rdfs:label "GDPR Lawfulness"@en ;
-    dct:created "2022-10-22"^^xsd:date ;
-    dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
-    dct:description "Status or state associated with being lawful or legally compliant regarding GDPR"@en ;
-    rdfs:isDefinedBy dpvo-gdpr: ;
-    rdfs:subClassOf dpvo:Lawfulness ;
-    sw:term_status "accepted"@en .
-
 dpvo-gdpr:GDPRNonCompliant a owl:NamedIndividual,
-        dpvo-gdpr:GDPRLawulness ;
+        dpvo-gdpr:GDPRLawfulness ;
     rdfs:label "GDPR Non-compliant"@en ;
     dct:created "2022-10-22"^^xsd:date ;
     dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
@@ -1171,6 +1162,15 @@ dpvo-gdpr:DPIARiskStatus a owl:Class ;
     dct:description "Status reflecting the status of risk associated with a DPIA"@en ;
     rdfs:isDefinedBy dpvo-gdpr: ;
     rdfs:subClassOf dpvo:AuditStatus ;
+    sw:term_status "accepted"@en .
+
+dpvo-gdpr:GDPRLawfulness a owl:Class ;
+    rdfs:label "GDPR Lawfulness"@en ;
+    dct:created "2022-10-22"^^xsd:date ;
+    dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
+    dct:description "Status or state associated with being lawful or legally compliant regarding GDPR"@en ;
+    rdfs:isDefinedBy dpvo-gdpr: ;
+    rdfs:subClassOf dpvo:Lawfulness ;
     sw:term_status "accepted"@en .
 
 dpvo-gdpr:DataTransferTool a owl:Class ;

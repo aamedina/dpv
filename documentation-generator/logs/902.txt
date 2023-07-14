@@ -82,7 +82,7 @@ INFO - serialize_graph :: 323 - wrote ../dpv/modules/base.n3
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/base.jsonld
 DEBUG - <module> :: 462 - ------
 DEBUG - <module> :: 463 - Processing personal_data module
-DEBUG - <module> :: 468 - there are 17 classes in personal_data
+DEBUG - <module> :: 468 - there are 23 classes in personal_data
 DEBUG - add_triples_for_classes :: 198 - AnonymisedData
 DEBUG - add_triples_for_classes :: 198 - CollectedPersonalData
 DEBUG - add_triples_for_classes :: 198 - Data
@@ -108,7 +108,7 @@ INFO - serialize_graph :: 323 - wrote ../dpv/modules/personal_data.n3
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/personal_data.jsonld
 DEBUG - <module> :: 462 - ------
 DEBUG - <module> :: 463 - Processing purposes module
-DEBUG - <module> :: 468 - there are 83 classes in purposes
+DEBUG - <module> :: 468 - there are 104 classes in purposes
 DEBUG - add_triples_for_classes :: 198 - Purpose
 DEBUG - add_triples_for_classes :: 198 - Sector
 DEBUG - add_triples_for_classes :: 198 - AccountManagement
@@ -196,7 +196,7 @@ INFO - serialize_graph :: 323 - wrote ../dpv/modules/purposes.n3
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/purposes.jsonld
 DEBUG - <module> :: 462 - ------
 DEBUG - <module> :: 463 - Processing context module
-DEBUG - <module> :: 468 - there are 26 classes in context
+DEBUG - <module> :: 468 - there are 29 classes in context
 DEBUG - add_triples_for_classes :: 198 - Context
 DEBUG - add_triples_for_classes :: 198 - Importance
 DEBUG - add_triples_for_classes :: 198 - PrimaryImportance
@@ -214,6 +214,7 @@ DEBUG - add_triples_for_classes :: 198 - OftenFrequency
 DEBUG - add_triples_for_classes :: 198 - SporadicFrequency
 DEBUG - add_triples_for_classes :: 198 - SingularFrequency
 DEBUG - add_triples_for_classes :: 198 - Duration
+DEBUG - add_triples_for_classes :: 198 - IndeterminateDuration
 DEBUG - add_triples_for_classes :: 198 - EndlessDuration
 DEBUG - add_triples_for_classes :: 198 - TemporalDuration
 DEBUG - add_triples_for_classes :: 198 - UntilEventDuration
@@ -244,6 +245,7 @@ DEBUG - add_triples_for_classes :: 198 - ActivityProposed
 DEBUG - add_triples_for_classes :: 198 - ActivityOngoing
 DEBUG - add_triples_for_classes :: 198 - ActivityHalted
 DEBUG - add_triples_for_classes :: 198 - ActivityCompleted
+DEBUG - add_triples_for_classes :: 198 - ActivityNotCompleted
 DEBUG - add_triples_for_classes :: 198 - ComplianceStatus
 DEBUG - add_triples_for_classes :: 198 - Compliant
 DEBUG - add_triples_for_classes :: 198 - PartiallyCompliant
@@ -265,6 +267,17 @@ DEBUG - add_triples_for_classes :: 198 - AuditRequired
 DEBUG - add_triples_for_classes :: 198 - ConformanceStatus
 DEBUG - add_triples_for_classes :: 198 - Conformant
 DEBUG - add_triples_for_classes :: 198 - NonConformant
+DEBUG - add_triples_for_classes :: 198 - RequestStatus
+DEBUG - add_triples_for_classes :: 198 - RequestInitiated
+DEBUG - add_triples_for_classes :: 198 - RequestAcknowledged
+DEBUG - add_triples_for_classes :: 198 - RequestAccepted
+DEBUG - add_triples_for_classes :: 198 - RequestRejected
+DEBUG - add_triples_for_classes :: 198 - RequestFulfilled
+DEBUG - add_triples_for_classes :: 198 - RequestUnfulfilled
+DEBUG - add_triples_for_classes :: 198 - RequestRequiresAction
+DEBUG - add_triples_for_classes :: 198 - RequestRequiredActionPerformed
+DEBUG - add_triples_for_classes :: 198 - RequestActionDelayed
+DEBUG - add_triples_for_classes :: 198 - RequestStatusQuery
 DEBUG - <module> :: 474 - there are 5 properties in status
 DEBUG - add_triples_for_properties :: 261 - hasStatus
 DEBUG - add_triples_for_properties :: 261 - hasComplianceStatus
@@ -314,7 +327,7 @@ INFO - serialize_graph :: 323 - wrote ../dpv/modules/risk.n3
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/risk.jsonld
 DEBUG - <module> :: 462 - ------
 DEBUG - <module> :: 463 - Processing processing module
-DEBUG - <module> :: 468 - there are 53 classes in processing
+DEBUG - <module> :: 468 - there are 59 classes in processing
 DEBUG - add_triples_for_classes :: 198 - Processing
 DEBUG - add_triples_for_classes :: 198 - Copy
 DEBUG - add_triples_for_classes :: 198 - Disclose
@@ -545,7 +558,7 @@ INFO - serialize_graph :: 323 - wrote ../dpv/modules/technical_measures.n3
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/technical_measures.jsonld
 DEBUG - <module> :: 462 - ------
 DEBUG - <module> :: 463 - Processing organisational_measures module
-DEBUG - <module> :: 468 - there are 73 classes in organisational_measures
+DEBUG - <module> :: 468 - there are 88 classes in organisational_measures
 DEBUG - add_triples_for_classes :: 198 - Assessment
 DEBUG - add_triples_for_classes :: 198 - AssetManagementProcedures
 DEBUG - add_triples_for_classes :: 198 - AuthorisationProcedure
@@ -680,7 +693,7 @@ INFO - serialize_graph :: 323 - wrote ../dpv/modules/entities_legalrole.n3
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/entities_legalrole.jsonld
 DEBUG - <module> :: 462 - ------
 DEBUG - <module> :: 463 - Processing entities_organisation module
-DEBUG - <module> :: 468 - there are 9 classes in entities_organisation
+DEBUG - <module> :: 468 - there are 14 classes in entities_organisation
 DEBUG - add_triples_for_classes :: 198 - Organisation
 DEBUG - add_triples_for_classes :: 198 - IndustryConsortium
 DEBUG - add_triples_for_classes :: 198 - GovernmentalOrganisation
@@ -800,19 +813,6 @@ DEBUG - add_triples_for_properties :: 261 - isIndicatedBy
 DEBUG - add_triples_for_properties :: 261 - hasIndicationMethod
 DEBUG - add_triples_for_properties :: 261 - isIndicatedAtTime
 DEBUG - add_triples_for_properties :: 261 - hasConsentStatus
-DEBUG - add_triples_for_properties :: 261 - hasExpiry
-DEBUG - add_triples_for_properties :: 261 - hasExpiryTime
-DEBUG - add_triples_for_properties :: 261 - hasExpiryCondition
-DEBUG - add_triples_for_properties :: 261 - hasProvisionMethod
-DEBUG - add_triples_for_properties :: 261 - hasProvisionTime
-DEBUG - add_triples_for_properties :: 261 - hasWithdrawalMethod
-DEBUG - add_triples_for_properties :: 261 - hasWithdrawalTime
-DEBUG - add_triples_for_properties :: 261 - hasWithdrawalBy
-DEBUG - add_triples_for_properties :: 261 - hasProvisionBy
-DEBUG - add_triples_for_properties :: 261 - hasProvisionByJustification
-DEBUG - add_triples_for_properties :: 261 - hasWithdrawalByJustification
-DEBUG - add_triples_for_properties :: 261 - hasConsentNotice
-DEBUG - add_triples_for_properties :: 261 - isExplicit
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/consent.rdf
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/consent.ttl
 INFO - serialize_graph :: 323 - wrote ../dpv/modules/consent.n3
@@ -2349,7 +2349,7 @@ INFO - serialize_graph :: 323 - wrote ../dpv-tech/dpv-tech.n3
 INFO - serialize_graph :: 323 - wrote ../dpv-tech/dpv-tech.jsonld
 DEBUG - <module> :: 1128 - ------
 DEBUG - <module> :: 1129 - Processing risk_consequences module
-DEBUG - <module> :: 1134 - there are 171 classes in risk_consequences
+DEBUG - <module> :: 1134 - there are 172 classes in risk_consequences
 DEBUG - add_triples_for_classes :: 198 - SecurityBreach
 DEBUG - add_triples_for_classes :: 198 - UnauthorisedReIdentification
 DEBUG - add_triples_for_classes :: 198 - ConsequenceForDataSubject
@@ -3080,7 +3080,7 @@ INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/base.n3
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/base.jsonld
 DEBUG - <module> :: 502 - ------
 DEBUG - <module> :: 505 - Processing personal_data ontology
-DEBUG - <module> :: 510 - there are 17 classes in personal_data
+DEBUG - <module> :: 510 - there are 23 classes in personal_data
 DEBUG - add_triples_for_classes :: 211 - AnonymisedData
 DEBUG - add_triples_for_classes :: 211 - CollectedPersonalData
 DEBUG - add_triples_for_classes :: 211 - Data
@@ -3106,7 +3106,7 @@ INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/personal_data.n3
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/personal_data.jsonld
 DEBUG - <module> :: 502 - ------
 DEBUG - <module> :: 505 - Processing purposes taxonomy
-DEBUG - <module> :: 510 - there are 83 classes in purposes
+DEBUG - <module> :: 510 - there are 104 classes in purposes
 DEBUG - add_triples_for_classes :: 211 - Purpose
 DEBUG - add_triples_for_classes :: 211 - Sector
 DEBUG - add_triples_for_classes :: 211 - AccountManagement
@@ -3194,7 +3194,7 @@ INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/purposes.n3
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/purposes.jsonld
 DEBUG - <module> :: 502 - ------
 DEBUG - <module> :: 505 - Processing context ontology
-DEBUG - <module> :: 510 - there are 26 classes in context
+DEBUG - <module> :: 510 - there are 29 classes in context
 DEBUG - add_triples_for_classes :: 211 - Context
 DEBUG - add_triples_for_classes :: 211 - Importance
 DEBUG - add_triples_for_classes :: 211 - PrimaryImportance
@@ -3212,6 +3212,7 @@ DEBUG - add_triples_for_classes :: 211 - OftenFrequency
 DEBUG - add_triples_for_classes :: 211 - SporadicFrequency
 DEBUG - add_triples_for_classes :: 211 - SingularFrequency
 DEBUG - add_triples_for_classes :: 211 - Duration
+DEBUG - add_triples_for_classes :: 211 - IndeterminateDuration
 DEBUG - add_triples_for_classes :: 211 - EndlessDuration
 DEBUG - add_triples_for_classes :: 211 - TemporalDuration
 DEBUG - add_triples_for_classes :: 211 - UntilEventDuration
@@ -3242,6 +3243,7 @@ DEBUG - add_triples_for_classes :: 211 - ActivityProposed
 DEBUG - add_triples_for_classes :: 211 - ActivityOngoing
 DEBUG - add_triples_for_classes :: 211 - ActivityHalted
 DEBUG - add_triples_for_classes :: 211 - ActivityCompleted
+DEBUG - add_triples_for_classes :: 211 - ActivityNotCompleted
 DEBUG - add_triples_for_classes :: 211 - ComplianceStatus
 DEBUG - add_triples_for_classes :: 211 - Compliant
 DEBUG - add_triples_for_classes :: 211 - PartiallyCompliant
@@ -3263,6 +3265,17 @@ DEBUG - add_triples_for_classes :: 211 - AuditRequired
 DEBUG - add_triples_for_classes :: 211 - ConformanceStatus
 DEBUG - add_triples_for_classes :: 211 - Conformant
 DEBUG - add_triples_for_classes :: 211 - NonConformant
+DEBUG - add_triples_for_classes :: 211 - RequestStatus
+DEBUG - add_triples_for_classes :: 211 - RequestInitiated
+DEBUG - add_triples_for_classes :: 211 - RequestAcknowledged
+DEBUG - add_triples_for_classes :: 211 - RequestAccepted
+DEBUG - add_triples_for_classes :: 211 - RequestRejected
+DEBUG - add_triples_for_classes :: 211 - RequestFulfilled
+DEBUG - add_triples_for_classes :: 211 - RequestUnfulfilled
+DEBUG - add_triples_for_classes :: 211 - RequestRequiresAction
+DEBUG - add_triples_for_classes :: 211 - RequestRequiredActionPerformed
+DEBUG - add_triples_for_classes :: 211 - RequestActionDelayed
+DEBUG - add_triples_for_classes :: 211 - RequestStatusQuery
 DEBUG - <module> :: 516 - there are 5 properties in status
 DEBUG - add_triples_for_properties :: 284 - hasStatus
 DEBUG - add_triples_for_properties :: 284 - hasComplianceStatus
@@ -3312,7 +3325,7 @@ INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/risk.n3
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/risk.jsonld
 DEBUG - <module> :: 502 - ------
 DEBUG - <module> :: 505 - Processing processing taxonomy
-DEBUG - <module> :: 510 - there are 53 classes in processing
+DEBUG - <module> :: 510 - there are 59 classes in processing
 DEBUG - add_triples_for_classes :: 211 - Processing
 DEBUG - add_triples_for_classes :: 211 - Copy
 DEBUG - add_triples_for_classes :: 211 - Disclose
@@ -3543,7 +3556,7 @@ INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/technical_measures.n3
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/technical_measures.jsonld
 DEBUG - <module> :: 502 - ------
 DEBUG - <module> :: 505 - Processing organisational_measures taxonomy
-DEBUG - <module> :: 510 - there are 73 classes in organisational_measures
+DEBUG - <module> :: 510 - there are 88 classes in organisational_measures
 DEBUG - add_triples_for_classes :: 211 - Assessment
 DEBUG - add_triples_for_classes :: 211 - AssetManagementProcedures
 DEBUG - add_triples_for_classes :: 211 - AuthorisationProcedure
@@ -3678,7 +3691,7 @@ INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/entities_legalrole.n3
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/entities_legalrole.jsonld
 DEBUG - <module> :: 502 - ------
 DEBUG - <module> :: 505 - Processing entities_organisation taxonomy
-DEBUG - <module> :: 510 - there are 9 classes in entities_organisation
+DEBUG - <module> :: 510 - there are 14 classes in entities_organisation
 DEBUG - add_triples_for_classes :: 211 - Organisation
 DEBUG - add_triples_for_classes :: 211 - IndustryConsortium
 DEBUG - add_triples_for_classes :: 211 - GovernmentalOrganisation
@@ -3798,19 +3811,6 @@ DEBUG - add_triples_for_properties :: 284 - isIndicatedBy
 DEBUG - add_triples_for_properties :: 284 - hasIndicationMethod
 DEBUG - add_triples_for_properties :: 284 - isIndicatedAtTime
 DEBUG - add_triples_for_properties :: 284 - hasConsentStatus
-DEBUG - add_triples_for_properties :: 284 - hasExpiry
-DEBUG - add_triples_for_properties :: 284 - hasExpiryTime
-DEBUG - add_triples_for_properties :: 284 - hasExpiryCondition
-DEBUG - add_triples_for_properties :: 284 - hasProvisionMethod
-DEBUG - add_triples_for_properties :: 284 - hasProvisionTime
-DEBUG - add_triples_for_properties :: 284 - hasWithdrawalMethod
-DEBUG - add_triples_for_properties :: 284 - hasWithdrawalTime
-DEBUG - add_triples_for_properties :: 284 - hasWithdrawalBy
-DEBUG - add_triples_for_properties :: 284 - hasProvisionBy
-DEBUG - add_triples_for_properties :: 284 - hasProvisionByJustification
-DEBUG - add_triples_for_properties :: 284 - hasWithdrawalByJustification
-DEBUG - add_triples_for_properties :: 284 - hasConsentNotice
-DEBUG - add_triples_for_properties :: 284 - isExplicit
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/consent.rdf
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/consent.ttl
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/modules/consent.n3
@@ -5347,7 +5347,7 @@ INFO - serialize_graph :: 362 - wrote ../dpv-skos/dpv-tech/dpv-tech.n3
 INFO - serialize_graph :: 362 - wrote ../dpv-skos/dpv-tech/dpv-tech.jsonld
 DEBUG - <module> :: 1189 - ------
 DEBUG - <module> :: 1190 - Processing risk_consequences module
-DEBUG - <module> :: 1195 - there are 171 classes in risk_consequences
+DEBUG - <module> :: 1195 - there are 172 classes in risk_consequences
 DEBUG - add_triples_for_classes :: 211 - SecurityBreach
 DEBUG - add_triples_for_classes :: 211 - UnauthorisedReIdentification
 DEBUG - add_triples_for_classes :: 211 - ConsequenceForDataSubject
@@ -6087,7 +6087,7 @@ INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/base.n3
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/base.jsonld
 DEBUG - <module> :: 492 - ------
 DEBUG - <module> :: 493 - Processing personal_data module
-DEBUG - <module> :: 498 - there are 17 classes in personal_data
+DEBUG - <module> :: 498 - there are 23 classes in personal_data
 DEBUG - add_triples_for_classes :: 213 - AnonymisedData
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#NonPersonalData
 DEBUG - add_triples_for_classes :: 213 - CollectedPersonalData
@@ -6129,7 +6129,7 @@ INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/personal_data.n3
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/personal_data.jsonld
 DEBUG - <module> :: 492 - ------
 DEBUG - <module> :: 493 - Processing purposes module
-DEBUG - <module> :: 498 - there are 83 classes in purposes
+DEBUG - <module> :: 498 - there are 104 classes in purposes
 DEBUG - add_triples_for_classes :: 213 - Purpose
 DEBUG - add_triples_for_classes :: 213 - Sector
 DEBUG - add_triples_for_classes :: 213 - AccountManagement
@@ -6297,7 +6297,7 @@ INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/purposes.n3
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/purposes.jsonld
 DEBUG - <module> :: 492 - ------
 DEBUG - <module> :: 493 - Processing context module
-DEBUG - <module> :: 498 - there are 26 classes in context
+DEBUG - <module> :: 498 - there are 29 classes in context
 DEBUG - add_triples_for_classes :: 213 - Context
 DEBUG - add_triples_for_classes :: 213 - Importance
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Context
@@ -6330,6 +6330,8 @@ DEBUG - add_triples_for_classes :: 213 - SingularFrequency
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Frequency
 DEBUG - add_triples_for_classes :: 213 - Duration
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Context
+DEBUG - add_triples_for_classes :: 213 - IndeterminateDuration
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Duration
 DEBUG - add_triples_for_classes :: 213 - EndlessDuration
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Duration
 DEBUG - add_triples_for_classes :: 213 - TemporalDuration
@@ -6370,6 +6372,8 @@ DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-ow
 DEBUG - add_triples_for_classes :: 213 - ActivityHalted
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ActivityStatus
 DEBUG - add_triples_for_classes :: 213 - ActivityCompleted
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ActivityStatus
+DEBUG - add_triples_for_classes :: 213 - ActivityNotCompleted
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ActivityStatus
 DEBUG - add_triples_for_classes :: 213 - ComplianceStatus
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Status
@@ -6413,6 +6417,28 @@ DEBUG - add_triples_for_classes :: 213 - Conformant
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ConformanceStatus
 DEBUG - add_triples_for_classes :: 213 - NonConformant
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ConformanceStatus
+DEBUG - add_triples_for_classes :: 213 - RequestStatus
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Status
+DEBUG - add_triples_for_classes :: 213 - RequestInitiated
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestAcknowledged
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestAccepted
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestRejected
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestFulfilled
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestUnfulfilled
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestRequiresAction
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestRequiredActionPerformed
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestActionDelayed
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
+DEBUG - add_triples_for_classes :: 213 - RequestStatusQuery
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#RequestStatus
 DEBUG - <module> :: 504 - there are 5 properties in status
 DEBUG - add_triples_for_properties :: 273 - hasStatus
 DEBUG - add_triples_for_properties :: 273 - hasComplianceStatus
@@ -6474,7 +6500,7 @@ INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/risk.n3
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/risk.jsonld
 DEBUG - <module> :: 492 - ------
 DEBUG - <module> :: 493 - Processing processing module
-DEBUG - <module> :: 498 - there are 53 classes in processing
+DEBUG - <module> :: 498 - there are 59 classes in processing
 DEBUG - add_triples_for_classes :: 213 - Processing
 DEBUG - add_triples_for_classes :: 213 - Copy
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Processing
@@ -6621,9 +6647,9 @@ DEBUG - add_triples_for_classes :: 213 - dpv:ThirdParty
 DEBUG - add_triples_for_classes :: 213 - EvaluationScoring
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ProcessingContext
 DEBUG - add_triples_for_classes :: 213 - EvaluationOfIndividuals
-DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ProcessingContext
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#EvaluationScoring
 DEBUG - add_triples_for_classes :: 213 - ScoringOfIndividuals
-DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ProcessingContext
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#EvaluationScoring
 DEBUG - add_triples_for_classes :: 213 - InnovativeUseOfNewTechnologies
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#ProcessingContext
 DEBUG - add_triples_for_classes :: 213 - StorageCondition
@@ -6884,7 +6910,7 @@ INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/technical_measures.n3
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/technical_measures.jsonld
 DEBUG - <module> :: 492 - ------
 DEBUG - <module> :: 493 - Processing organisational_measures module
-DEBUG - <module> :: 498 - there are 73 classes in organisational_measures
+DEBUG - <module> :: 498 - there are 88 classes in organisational_measures
 DEBUG - add_triples_for_classes :: 213 - Assessment
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#OrganisationalMeasure
 DEBUG - add_triples_for_classes :: 213 - AssetManagementProcedures
@@ -7109,7 +7135,7 @@ INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/entities_legalrole.n3
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/entities_legalrole.jsonld
 DEBUG - <module> :: 492 - ------
 DEBUG - <module> :: 493 - Processing entities_organisation module
-DEBUG - <module> :: 498 - there are 9 classes in entities_organisation
+DEBUG - <module> :: 498 - there are 14 classes in entities_organisation
 DEBUG - add_triples_for_classes :: 213 - Organisation
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#LegalEntity
 DEBUG - add_triples_for_classes :: 213 - IndustryConsortium
@@ -7303,19 +7329,6 @@ DEBUG - add_triples_for_properties :: 273 - isIndicatedBy
 DEBUG - add_triples_for_properties :: 273 - hasIndicationMethod
 DEBUG - add_triples_for_properties :: 273 - isIndicatedAtTime
 DEBUG - add_triples_for_properties :: 273 - hasConsentStatus
-DEBUG - add_triples_for_properties :: 273 - hasExpiry
-DEBUG - add_triples_for_properties :: 273 - hasExpiryTime
-DEBUG - add_triples_for_properties :: 273 - hasExpiryCondition
-DEBUG - add_triples_for_properties :: 273 - hasProvisionMethod
-DEBUG - add_triples_for_properties :: 273 - hasProvisionTime
-DEBUG - add_triples_for_properties :: 273 - hasWithdrawalMethod
-DEBUG - add_triples_for_properties :: 273 - hasWithdrawalTime
-DEBUG - add_triples_for_properties :: 273 - hasWithdrawalBy
-DEBUG - add_triples_for_properties :: 273 - hasProvisionBy
-DEBUG - add_triples_for_properties :: 273 - hasProvisionByJustification
-DEBUG - add_triples_for_properties :: 273 - hasWithdrawalByJustification
-DEBUG - add_triples_for_properties :: 273 - hasConsentNotice
-DEBUG - add_triples_for_properties :: 273 - isExplicit
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/consent.rdf
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/consent.ttl
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/modules/consent.n3
@@ -7699,11 +7712,11 @@ DEBUG - <module> :: 589 - there are 6 classes in compliance
 DEBUG - add_triples_for_classes :: 213 - GDPRLawfulness
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Lawfulness
 DEBUG - add_triples_for_classes :: 213 - GDPRCompliant
-DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl/dpv-gdpr#GDPRLawulness
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl/dpv-gdpr#GDPRLawfulness
 DEBUG - add_triples_for_classes :: 213 - GDPRNonCompliant
-DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl/dpv-gdpr#GDPRLawulness
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl/dpv-gdpr#GDPRLawfulness
 DEBUG - add_triples_for_classes :: 213 - GDPRComplianceUnknown
-DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl/dpv-gdpr#GDPRLawulness
+DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl/dpv-gdpr#GDPRLawfulness
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/dpv-gdpr/modules/compliance.rdf
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/dpv-gdpr/modules/compliance.ttl
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/dpv-gdpr/modules/compliance.n3
@@ -9278,7 +9291,7 @@ INFO - serialize_graph :: 354 - wrote ../dpv-owl/dpv-tech/dpv-tech.n3
 INFO - serialize_graph :: 354 - wrote ../dpv-owl/dpv-tech/dpv-tech.jsonld
 DEBUG - <module> :: 1117 - ------
 DEBUG - <module> :: 1118 - Processing risk_consequences module
-DEBUG - <module> :: 1123 - there are 171 classes in risk_consequences
+DEBUG - <module> :: 1123 - there are 172 classes in risk_consequences
 DEBUG - add_triples_for_classes :: 213 - SecurityBreach
 DEBUG - add_triples_for_classes :: 236 - has parent: https://w3id.org/dpv/dpv-owl#Consequence
 DEBUG - add_triples_for_classes :: 213 - UnauthorisedReIdentification
@@ -10479,63 +10492,123 @@ item: dpv-legal:EasternAfrica
 item: dpv-legal:Europe
 item: dpv-legal:NorthernEurope
 Converting DPV files from .rdf to .owl with ManchesterSyntax
-converting ../dpv-owl/risk/risk ...DONE
-converting ../dpv-owl/risk/modules/risk_matrix ...DONE
-converting ../dpv-owl/risk/modules/risk_levels ...DONE
-converting ../dpv-owl/risk/modules/risk_controls ...DONE
-converting ../dpv-owl/risk/modules/risk_assessment ...DONE
-converting ../dpv-owl/risk/modules/risk_methodology ...DONE
-converting ../dpv-owl/risk/modules/risk_consequences ...DONE
-converting ../dpv-owl/modules/consent ...DONE
-converting ../dpv-owl/modules/base ...DONE
-converting ../dpv-owl/modules/risk ...DONE
-converting ../dpv-owl/modules/consent_types ...DONE
-converting ../dpv-owl/modules/entities_legalrole ...DONE
-converting ../dpv-owl/modules/consent_status ...DONE
-converting ../dpv-owl/modules/rules ...DONE
-converting ../dpv-owl/modules/technical_organisational_measures ...DONE
-converting ../dpv-owl/modules/purposes ...DONE
-converting ../dpv-owl/modules/personal_data ...DONE
-converting ../dpv-owl/modules/entities_authority ...DONE
-converting ../dpv-owl/modules/technical_measures ...DONE
-converting ../dpv-owl/modules/processing ...DONE
-converting ../dpv-owl/modules/entities_datasubject ...DONE
-converting ../dpv-owl/modules/legal_basis ...DONE
-converting ../dpv-owl/modules/organisational_measures ...DONE
-converting ../dpv-owl/modules/entities_organisation ...DONE
-converting ../dpv-owl/modules/processing_context ...DONE
-converting ../dpv-owl/modules/jurisdictions ...DONE
-converting ../dpv-owl/modules/status ...DONE
-converting ../dpv-owl/modules/processing_scale ...DONE
-converting ../dpv-owl/modules/context ...DONE
-converting ../dpv-owl/modules/rights ...DONE
-converting ../dpv-owl/modules/jurisdiction ...DONE
-converting ../dpv-owl/modules/entities ...DONE
-converting ../dpv-owl/dpv-legal/modules/authorities ...DONE
-converting ../dpv-owl/dpv-legal/modules/eu_adequacy ...DONE
-converting ../dpv-owl/dpv-legal/modules/eu_eea ...DONE
-converting ../dpv-owl/dpv-legal/modules/laws ...DONE
-converting ../dpv-owl/dpv-legal/modules/ontology ...DONE
-converting ../dpv-owl/dpv-legal/modules/locations ...DONE
-converting ../dpv-owl/dpv-legal/dpv-legal ...DONE
-converting ../dpv-owl/rights/eu/rights-eu ...DONE
-converting ../dpv-owl/dpv-pd/dpv-pd ...DONE
-converting ../dpv-owl/dpv ...DONE
-converting ../dpv-owl/dpv-gdpr/modules/legal_basis_data_transfer ...DONE
-converting ../dpv-owl/dpv-gdpr/modules/dpia ...DONE
-converting ../dpv-owl/dpv-gdpr/modules/legal_basis ...DONE
-converting ../dpv-owl/dpv-gdpr/modules/legal_basis_special ...DONE
-converting ../dpv-owl/dpv-gdpr/modules/data_transfers ...DONE
-converting ../dpv-owl/dpv-gdpr/modules/rights ...DONE
-converting ../dpv-owl/dpv-gdpr/modules/compliance ...DONE
-converting ../dpv-owl/dpv-gdpr/dpv-gdpr ...DONE
-converting ../dpv-owl/dpv-tech/modules/core ...DONE
-converting ../dpv-owl/dpv-tech/modules/provision ...DONE
-converting ../dpv-owl/dpv-tech/modules/actors ...DONE
-converting ../dpv-owl/dpv-tech/modules/ops ...DONE
-converting ../dpv-owl/dpv-tech/modules/comms ...DONE
-converting ../dpv-owl/dpv-tech/modules/surveillance ...DONE
-converting ../dpv-owl/dpv-tech/modules/tools ...DONE
-converting ../dpv-owl/dpv-tech/modules/security ...DONE
-converting ../dpv-owl/dpv-tech/modules/data ...DONE
-converting ../dpv-owl/dpv-tech/dpv-tech ...DONE
+converting ../dpv-owl/risk/modules/risk_methodology ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/risk/modules/risk_assessment ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/risk/modules/risk_matrix ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/risk/modules/risk_controls ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/risk/modules/risk_consequences ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/risk/modules/risk_levels ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/risk/risk ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/rights/eu/rights-eu ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-gdpr/modules/rights ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-gdpr/modules/dpia ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-gdpr/modules/legal_basis ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-gdpr/modules/legal_basis_special ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-gdpr/modules/data_transfers ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-gdpr/modules/legal_basis_data_transfer ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-gdpr/modules/compliance ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-gdpr/dpv-gdpr ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-legal/modules/locations ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-legal/modules/eu_eea ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-legal/modules/ontology ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-legal/modules/authorities ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-legal/modules/laws ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-legal/modules/eu_adequacy ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-legal/dpv-legal ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/technical_organisational_measures ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/personal_data ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/jurisdictions ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/entities_datasubject ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/entities_organisation ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/base ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/rights ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/entities_legalrole ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/processing ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/consent ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/status ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/risk ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/consent_types ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/context ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/legal_basis ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/technical_measures ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/processing_context ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/entities_authority ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/processing_scale ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/rules ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/jurisdiction ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/purposes ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/consent_status ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/organisational_measures ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/modules/entities ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-pd/dpv-pd ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/dpv-tech ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/core ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/data ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/ops ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/comms ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/tools ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/security ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/provision ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/actors ...Error: Unable to access jarfile ont-converter.jar
+DONE
+converting ../dpv-owl/dpv-tech/modules/surveillance ...Error: Unable to access jarfile ont-converter.jar
+DONE

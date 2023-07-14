@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Subscription",
+    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Algorithmic",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2000/01/rdf-schema#Class",
@@ -36,60 +36,13 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Technology that is provided or used as a periodic subscription"
+        "@value": "Technology provided as an algorithm or method"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Subscription"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Product",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "https://w3id.org/dpv/dpv-skos/dpv-tech#TechnologyProvisionMethod"
-    ],
-    "http://purl.org/dc/terms/created": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-06-15"
-      }
-    ],
-    "http://purl.org/dc/terms/creator": [
-      {
-        "@value": "Harshvardhan J. Pandit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@language": "en",
-        "@value": "accepted"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#TechnologyProvisionMethod"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Technology that is provided as a product"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "Product"
+        "@value": "Algorithmic"
       }
     ]
   },
@@ -141,42 +94,96 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#ProvisionConcepts",
+    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Component",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Collection"
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "https://w3id.org/dpv/dpv-skos/dpv-tech#TechnologyProvisionMethod"
     ],
-    "http://www.w3.org/2004/02/skos/core#member": [
+    "http://purl.org/dc/terms/created": [
       {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#FixedUse"
-      },
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-06-15"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
       {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Subscription"
-      },
+        "@value": "Harshvardhan J. Pandit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Product"
-      },
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Goods"
-      },
+        "@language": "en",
+        "@value": "accepted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
       {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Service"
-      },
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#TechnologyProvisionMethod"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
       {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Algorithmic"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#System"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Component"
-      },
-      {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#hasProvisionMethod"
+        "@language": "en",
+        "@value": "Technology provided as a component"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
-        "@value": "Provision Concepts"
+        "@language": "en",
+        "@value": "Component"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Goods",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept",
+      "http://www.w3.org/2000/01/rdf-schema#Class",
+      "https://w3id.org/dpv/dpv-skos/dpv-tech#TechnologyProvisionMethod"
+    ],
+    "http://purl.org/dc/terms/created": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2022-06-15"
+      }
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@value": "Harshvardhan J. Pandit"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@language": "en",
+        "@value": "accepted"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#TechnologyProvisionMethod"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition": [
+      {
+        "@language": "en",
+        "@value": "Technology provided or used as goods"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Goods"
       }
     ]
   },
@@ -228,58 +235,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#hasProvisionMethod",
-    "@type": [
-      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ],
-    "http://purl.org/dc/terms/created": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-07-02"
-      }
-    ],
-    "http://purl.org/dc/terms/creator": [
-      {
-        "@value": "Harshvardhan J. Pandit"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-skos#Technology"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@language": "en",
-        "@value": "changed"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#definition": [
-      {
-        "@language": "en",
-        "@value": "Specifies the provision or usage method of technology"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#prefLabel": [
-      {
-        "@language": "en",
-        "@value": "has provision method"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Component",
+    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Product",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2000/01/rdf-schema#Class",
@@ -315,13 +271,53 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Technology provided as a component"
+        "@value": "Technology that is provided as a product"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Component"
+        "@value": "Product"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#ProvisionConcepts",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Collection"
+    ],
+    "http://www.w3.org/2004/02/skos/core#member": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#FixedUse"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Subscription"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Product"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Goods"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Service"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Algorithmic"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#System"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Component"
+      },
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#hasProvisionMethod"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@value": "Provision Concepts"
       }
     ]
   },
@@ -379,16 +375,15 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Algorithmic",
+    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#hasProvisionMethod",
     "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept",
-      "http://www.w3.org/2000/01/rdf-schema#Class",
-      "https://w3id.org/dpv/dpv-skos/dpv-tech#TechnologyProvisionMethod"
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "http://www.w3.org/2004/02/skos/core#Concept"
     ],
     "http://purl.org/dc/terms/created": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2022-06-15"
+        "@value": "2022-07-02"
       }
     ],
     "http://purl.org/dc/terms/creator": [
@@ -396,37 +391,42 @@
         "@value": "Harshvardhan J. Pandit"
       }
     ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-skos#Technology"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
         "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#"
       }
     ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "https://w3id.org/dpv/dpv-tech#TechnologyProvisionMethod"
+      }
+    ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@language": "en",
-        "@value": "accepted"
-      }
-    ],
-    "http://www.w3.org/2004/02/skos/core#broader": [
-      {
-        "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#TechnologyProvisionMethod"
+        "@value": "changed"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Technology provided as an algorithm or method"
+        "@value": "Specifies the provision or usage method of technology"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Algorithmic"
+        "@value": "has provision method"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Goods",
+    "@id": "https://w3id.org/dpv/dpv-skos/dpv-tech#Subscription",
     "@type": [
       "http://www.w3.org/2004/02/skos/core#Concept",
       "http://www.w3.org/2000/01/rdf-schema#Class",
@@ -462,13 +462,13 @@
     "http://www.w3.org/2004/02/skos/core#definition": [
       {
         "@language": "en",
-        "@value": "Technology provided or used as goods"
+        "@value": "Technology that is provided or used as a periodic subscription"
       }
     ],
     "http://www.w3.org/2004/02/skos/core#prefLabel": [
       {
         "@language": "en",
-        "@value": "Goods"
+        "@value": "Subscription"
       }
     ]
   }

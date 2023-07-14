@@ -950,11 +950,11 @@ dpv-gdpr:GDPRComplianceUnknown a skos:Concept,
     dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
     rdfs:isDefinedBy dpv-gdpr: ;
     sw:term_status "accepted"@en ;
-    skos:broader dpv-gdpr:GDPRLawulness ;
+    skos:broader dpv-gdpr:GDPRLawfulness ;
     skos:definition "State where lawfulness or compliance with GDPR is unknown"@en ;
     skos:inScheme dpv-gdpr: ;
     skos:prefLabel "GDPR Compliance Unknown"@en ;
-    dpv:isInstanceOf dpv-gdpr:GDPRLawulness .
+    dpv:isInstanceOf dpv-gdpr:GDPRLawfulness .
 
 dpv-gdpr:GDPRCompliant a skos:Concept,
         dpv:Concept ;
@@ -962,23 +962,11 @@ dpv-gdpr:GDPRCompliant a skos:Concept,
     dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
     rdfs:isDefinedBy dpv-gdpr: ;
     sw:term_status "accepted"@en ;
-    skos:broader dpv-gdpr:GDPRLawulness ;
+    skos:broader dpv-gdpr:GDPRLawfulness ;
     skos:definition "State of being lawful or legally compliant for GDPR"@en ;
     skos:inScheme dpv-gdpr: ;
     skos:prefLabel "GDPR Compliant"@en ;
-    dpv:isInstanceOf dpv-gdpr:GDPRLawulness .
-
-dpv-gdpr:GDPRLawfulness a skos:Concept,
-        dpv:Concept ;
-    dct:created "2022-10-22"^^xsd:date ;
-    dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
-    rdfs:isDefinedBy dpv-gdpr: ;
-    sw:term_status "accepted"@en ;
-    skos:broader dpv:Lawfulness ;
-    skos:definition "Status or state associated with being lawful or legally compliant regarding GDPR"@en ;
-    skos:inScheme dpv-gdpr: ;
-    skos:prefLabel "GDPR Lawfulness"@en ;
-    dpv:isSubTypeOf dpv:Lawfulness .
+    dpv:isInstanceOf dpv-gdpr:GDPRLawfulness .
 
 dpv-gdpr:GDPRNonCompliant a skos:Concept,
         dpv:Concept ;
@@ -986,11 +974,11 @@ dpv-gdpr:GDPRNonCompliant a skos:Concept,
     dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
     rdfs:isDefinedBy dpv-gdpr: ;
     sw:term_status "accepted"@en ;
-    skos:broader dpv-gdpr:GDPRLawulness ;
+    skos:broader dpv-gdpr:GDPRLawfulness ;
     skos:definition "State of being unlawful or legally non-compliant for GDPR"@en ;
     skos:inScheme dpv-gdpr: ;
     skos:prefLabel "GDPR Non-compliant"@en ;
-    dpv:isInstanceOf dpv-gdpr:GDPRLawulness .
+    dpv:isInstanceOf dpv-gdpr:GDPRLawfulness .
 
 dpv-gdpr:IndirectDataCollectionNotice a skos:Concept,
         dpv:Concept ;
@@ -1567,10 +1555,6 @@ dpv-gdpr:DPIAProcessingRecommendation a skos:Concept,
     skos:prefLabel "DPIA Processing Recommendation"@en ;
     dpv:isSubTypeOf dpv:AuditStatus .
 
-dpv-gdpr:GDPRLawulness skos:narrower dpv-gdpr:GDPRComplianceUnknown,
-        dpv-gdpr:GDPRCompliant,
-        dpv-gdpr:GDPRNonCompliant .
-
 dpv-gdpr:A6-1-e a skos:Concept,
         dpv:Concept ;
     dct:created "2019-04-05"^^xsd:date ;
@@ -1655,6 +1639,21 @@ dpv-gdpr:DPIARiskStatus a skos:Concept,
         dpv-gdpr:DPIAIndicatesNoRisk ;
     skos:prefLabel "DPIA Risk Status"@en ;
     dpv:isSubTypeOf dpv:AuditStatus .
+
+dpv-gdpr:GDPRLawfulness a skos:Concept,
+        dpv:Concept ;
+    dct:created "2022-10-22"^^xsd:date ;
+    dct:creator "Harshvardhan J. Pandit"^^xsd:string ;
+    rdfs:isDefinedBy dpv-gdpr: ;
+    sw:term_status "accepted"@en ;
+    skos:broader dpv:Lawfulness ;
+    skos:definition "Status or state associated with being lawful or legally compliant regarding GDPR"@en ;
+    skos:inScheme dpv-gdpr: ;
+    skos:narrower dpv-gdpr:GDPRComplianceUnknown,
+        dpv-gdpr:GDPRCompliant,
+        dpv-gdpr:GDPRNonCompliant ;
+    skos:prefLabel "GDPR Lawfulness"@en ;
+    dpv:isSubTypeOf dpv:Lawfulness .
 
 dpv:Contract skos:narrower dpv-gdpr:A49-1-b,
         dpv-gdpr:A49-1-c,

@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://w3id.org/dpv/dpv-owl/dpv-tech#OperationDevice",
+    "@id": "https://w3id.org/dpv/dpv-owl/dpv-tech#Application",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -18,7 +18,7 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "Technology that acts as an equipment or mechanism for operations"
+        "@value": "A computing or digital program"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -29,7 +29,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Operation Device"
+        "@value": "Application"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "@id": "https://w3id.org/dpv/dpv-owl/dpv-tech#Application",
+    "@id": "https://w3id.org/dpv/dpv-owl/dpv-tech#OperationDevice",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -108,7 +108,7 @@
     "http://purl.org/dc/terms/description": [
       {
         "@language": "en",
-        "@value": "A computing or digital program"
+        "@value": "Technology that acts as an equipment or mechanism for operations"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
@@ -119,7 +119,7 @@
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "en",
-        "@value": "Application"
+        "@value": "Operation Device"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
